@@ -139,8 +139,6 @@ sns.catplot(data=df,col="Survived",x="Gender",hue="Pclass",kind="count")
 ![image](https://github.com/user-attachments/assets/ed45706e-5efa-422d-862f-2d735e2ce0a0)
 
 ```
-
-```
 numeric_dt = df.select_dtypes(include=['number'])
 corr = numeric_dt.corr()
 sns.heatmap(corr,annot=True)
