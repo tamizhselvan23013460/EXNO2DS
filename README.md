@@ -149,7 +149,7 @@ sns.heatmap(corr,annot=True)
 ![image](https://github.com/user-attachments/assets/d3fea762-a24a-4e59-960a-4e886f5c8aff)
 
 
-
+```
 import seaborn as sns
 corr=df.corr()
 sns.heatmap(corr,annot=True)
