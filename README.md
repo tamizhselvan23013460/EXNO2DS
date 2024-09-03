@@ -139,6 +139,17 @@ sns.catplot(data=df,col="Survived",x="Gender",hue="Pclass",kind="count")
 ![image](https://github.com/user-attachments/assets/ed45706e-5efa-422d-862f-2d735e2ce0a0)
 
 ```
+
+```
+numeric_dt = df.select_dtypes(include=['number'])
+corr = numeric_dt.corr()
+sns.heatmap(corr,annot=True)
+```
+
+![image](https://github.com/user-attachments/assets/d3fea762-a24a-4e59-960a-4e886f5c8aff)
+
+
+
 import seaborn as sns
 corr=df.corr()
 sns.heatmap(corr,annot=True)
