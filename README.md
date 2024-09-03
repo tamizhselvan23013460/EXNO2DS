@@ -143,8 +143,9 @@ import seaborn as sns
 corr=df.corr()
 sns.heatmap(corr,annot=True)
 ```
+```
 sns.pairplot(df)
-
+```
 ![image](https://github.com/user-attachments/assets/0f95fc33-f37f-441f-a3ce-c0481bbae6a6)
 
 
